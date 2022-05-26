@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NavBar from "../components/Navbar/NavBar";
 
-export default Home = () => {
+ const Home = () => {
   return (
     <div>
       <Head>
@@ -9,6 +9,9 @@ export default Home = () => {
         <meta name="description" content="Hotel" />
       </Head>
       <NavBar />
+     
     </div>
   );
 };
+
+export default Home;
