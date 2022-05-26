@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.navbarContainer {
+  display: flex;
+  width: 1500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+}
+.menuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+.menuContainer li {
+  list-style: none;
+  margin: 20px;
+  cursor: pointer;
+}
+.menuContainer li:hover {
+  color: black;
+}
+.logo {
+  margin-left: 500px;
+}

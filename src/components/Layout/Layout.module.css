@@ -1,0 +1,11 @@
+.image{
+    position: fixed;
+    min-width: 1910px;
+    min-height: 940px;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
