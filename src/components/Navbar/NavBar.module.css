@@ -29,6 +29,7 @@
   list-style: none;
   margin: 20px;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .menuContainer li:hover {
