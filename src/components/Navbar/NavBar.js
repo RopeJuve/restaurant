@@ -7,10 +7,10 @@ function NavBar() {
   return (
     <Layout>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <Image src={logo.src} alt="logo" width={200} height={200} />
-        </div>
         <div className={styles.navbarContainer}>
+          <div className={styles.logo}>
+            <Image src={logo.src} alt="logo" width={150} height={150} />
+          </div>
           <ul className={styles.menuContainer}>
             <li>HOME</li>
             <li>GALLERY</li>

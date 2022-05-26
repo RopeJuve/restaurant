@@ -4,7 +4,7 @@ import styles from "./Layout.module.css";
 
 function Layout(props) {
   return (
-    <div>
+    <div className={styles.background}>
       {props.children}
       <div className={styles.image}>
         <Image

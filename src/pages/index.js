@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NavBar from "../components/Navbar/NavBar";
 
-export default function Home() {
+export default Home = () => {
   return (
     <div>
       <Head>
@@ -11,4 +11,4 @@ export default function Home() {
       <NavBar />
     </div>
   );
-}
+};
