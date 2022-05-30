@@ -7,7 +7,7 @@ function NavBar() {
   const [isScrool, setIsScrool] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 100) {
       setIsScrool(true);
     } else {
       setIsScrool(false);
@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <div className={isScrool ? styles.navBarScrool : styles.navbarContainer}>
       <div className={isScrool ? styles.scrollogo : styles.logo}>
-        <Image src={logo.src} alt="logo" width={150} height={150} />
+        <Image src={logo.src} alt="logo" width={100} height={100} />
       </div>
       <ul className={styles.menuContainer}>
         <li>HOME</li>

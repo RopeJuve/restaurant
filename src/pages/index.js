@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "../components/Navbar/NavBar";
 import Layout from "../components/Layout/Layout";
 import HeroSection from "../components/HeroSection/HeroSection";
+import BookingSection from "../components/BookingSection/BookingSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Layout>
         <NavBar />
         <HeroSection />
+        <BookingSection />
       </Layout>
     </div>
   );
