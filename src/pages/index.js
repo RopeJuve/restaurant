@@ -3,7 +3,7 @@ import NavBar from "../components/Navbar/NavBar";
 import Layout from "../components/Layout/Layout";
 import HeroSection from "../components/HeroSection/HeroSection";
 
- const Home = () => {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -11,10 +11,9 @@ import HeroSection from "../components/HeroSection/HeroSection";
         <meta name="description" content="Hotel" />
       </Head>
       <Layout>
-         <NavBar />
-         <HeroSection />
+        <NavBar />
+        <HeroSection />
       </Layout>
-     
     </div>
   );
 };
