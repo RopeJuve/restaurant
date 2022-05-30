@@ -9,7 +9,7 @@ const HeroSection = () => {
       </h1>
       <div className={styles.line}></div>
 
-      <button className={styles.button}>Book Now</button>
+      <button className={styles.button}>BOOK NOW</button>
     </div>
   );
 };
