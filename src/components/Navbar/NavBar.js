@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import styles from "./NavBar.module.css";
 import Image from "next/image";
 import logo from "../../assets/images/logo.png";
+import { useTranslation } from "next-i18next";
 
 function NavBar() {
+  const { t } = useTranslation();
   const [isScrool, setIsScrool] = useState(false);
 
   const handleScroll = () => {
@@ -23,11 +25,11 @@ function NavBar() {
         <Image src={logo.src} alt="logo" width={100} height={100} />
       </div>
       <ul className={styles.menuContainer}>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>ROOMS</li>
-        <li>RESERVATION</li>
-        <li>CONTACT</li>
+        <li>{`${t("navbar.home")}`}</li>
+        <li>{`${t("navbar.aboutUs")}`}</li>
+        <li>{`${t("navbar.rooms")}`}</li>
+        <li>{`${t("navbar.reservation")}`}</li>
+        <li>{`${t("navbar.contact")}`}</li>
       </ul>
     </div>
   );
