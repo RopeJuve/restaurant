@@ -19,11 +19,12 @@
 .container h1 {
   color: white;
   font-family: Roboto;
+  font-size: 4rem;
   font-style: bold;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  line-height: 45px;
+  line-height: 4.5rem;
   letter-spacing: 2px;
   font-weight: 700;
   white-space: pre-line;
@@ -44,7 +45,7 @@
   padding: 0.2rem;
   width: 200px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .button:hover {
