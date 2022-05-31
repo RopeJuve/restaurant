@@ -1,62 +1,61 @@
 .container {
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(197, 157, 95);
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(197, 157, 95);
 }
 
 .inputContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
-.inputContainer label{
-    font-family: "Nunito Sans", sans-serif;
-    color: white;
-    text-align: left;
-    font-size: .9rem;
-    line-height: 1.6rem;
-    letter-spacing: 1.5px;
+.inputContainer label {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.5px;
 }
 
-.button{
-    cursor: pointer;
-    font-weight: bold;
-    letter-spacing: 1.44px;
-    padding: 0.6rem 4.5rem;
-    width: auto;
-    text-align: center;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    margin-top: 1.5rem;
-    margin-left: -5rem;
-    transition: background-color 0.4s ease-in-out;
+.button {
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1.44px;
+  padding: 0.6rem 4.5rem;
+  width: auto;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin-top: 1.5rem;
+  margin-left: -5rem;
+  transition: background-color 0.4s ease-in-out;
 }
 
-.button:hover{
-    background-color: white;
-    color: rgb(197, 157, 95);
-    border: 1px solid rgb(197, 157, 95);
+.button:hover {
+  background-color: white;
+  color: rgb(197, 157, 95);
+  border: 1px solid rgb(197, 157, 95);
 }
 
-.containerInput{
-    border: 1px solid white;
-    padding: .2rem;
-    background-color: transparent;
+.containerInput {
+  border: 1px solid white;
+  padding: 0.2rem;
+  background-color: transparent;
 }
 
-.input{
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: .9rem;
-    line-height: 1.6rem;
-    letter-spacing: 1.5px;
+.input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.5px;
 }
