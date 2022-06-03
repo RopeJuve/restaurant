@@ -25,7 +25,9 @@ function NavBar() {
       <div className={isScrool ? styles.scrollogo : styles.logo}>
         <Image src={logo.src} alt="logo" width={100} height={100} />
       </div>
-      <ul className={styles.menuContainer}>
+      <ul
+        className={isScrool ? styles.menuContainerScrool : styles.menuContainer}
+      >
         <li>
           <Link href="/">{`${t("navbar.home")}`}</Link>
         </li>

@@ -5,7 +5,8 @@ import nextI18nextConfig from "../../next-i18next.config";
 import Layout from "../components/Layout/Layout";
 import HeroSection from "../components/HeroSection/HeroSection";
 import BookingSection from "../components/BookingSection/BookingSection";
-import AboutUs from "../components/AboutUs/AboutUs"
+import AboutUs from "../components/AboutUs/AboutUs";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <HeroSection />
         <BookingSection />
         <AboutUs />
+        <Footer />
       </Layout>
     </div>
   );
