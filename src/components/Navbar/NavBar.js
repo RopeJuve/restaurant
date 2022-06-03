@@ -3,6 +3,7 @@ import styles from "./NavBar.module.css";
 import Image from "next/image";
 import logo from "../../assets/images/logo.png";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 function NavBar() {
   const { t } = useTranslation();
@@ -25,8 +26,12 @@ function NavBar() {
         <Image src={logo.src} alt="logo" width={100} height={100} />
       </div>
       <ul className={styles.menuContainer}>
-        <li>{`${t("navbar.home")}`}</li>
-        <li>{`${t("navbar.aboutUs")}`}</li>
+        <li>
+          <Link href="/">{`${t("navbar.home")}`}</Link>
+        </li>
+        <li>
+          <Link href="/#aboutus">{`${t("navbar.aboutUs")}`}</Link>
+        </li>
         <li>{`${t("navbar.rooms")}`}</li>
         <li>{`${t("navbar.reservation")}`}</li>
         <li>{`${t("navbar.contact")}`}</li>

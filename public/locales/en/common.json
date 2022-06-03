@@ -6,9 +6,12 @@
     "reservation": "RESERVATION",
     "contact": "CONTACT"
   },
-  "body": {
+  "herosection": {
     "titel1": "Welcome to hotel",
     "titel2": "WE ARE ALWAYS THE\nRIGHT CHOICE",
     "book": "Book now"
+  },
+  "aboutus": {
+    "titel": "OUR STORY"
   }
 }
