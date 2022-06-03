@@ -1,8 +1,12 @@
 import styles from "./AboutUs.module.css";
+import { useTranslation } from "next-i18next";
+
 function BookingSection() {
+  const { t } = useTranslation();
   return (
-    <div className={styles.container}>
-      <h1>OUR STORY</h1>
+    <div id="aboutus" className={styles.container}>
+      <h1 className={styles.h1}>{`${t("aboutus.titel")}`}</h1>
+      <div className={styles.line}></div>
       <p className={styles.p}>
         lorem ipsum dolor sit amet consectetur adipiscing elit finibus auctor
         vestibulum varius velit sociosqu ad at hendrerit pulvinar eleifend
