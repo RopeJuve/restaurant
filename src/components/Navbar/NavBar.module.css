@@ -1,13 +1,3 @@
-/* .container {
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  color: white;
-  border-bottom: 0.5px solid gray;
-  transition: all 0.3s ease-in-out;
-} */
 
 .navbarContainer {
   position: sticky;
@@ -38,12 +28,12 @@
   align-items: center;
   text-align: center;
   font-size: x-large;
-  color: black;
+  color: white;
 }
 
 .scrollogo {
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 200px;
   margin-left: 10rem;
 }
 
@@ -81,7 +71,7 @@
 }
 
 .menuContainerScrool li:hover {
-  color: white;
+  color: black;
 }
 .logo {
   cursor: pointer;

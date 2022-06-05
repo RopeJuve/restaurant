@@ -9,7 +9,7 @@ const HeroSection = () => {
       <h1>{`${t("herosection.titel2")}`}</h1>
       <div className={styles.line}></div>
 
-      <button className={styles.button}>{`${t("body.book")}`}</button>
+      <button className={styles.button}>{`${t("herosection.book")}`}</button>
     </div>
   );
 };

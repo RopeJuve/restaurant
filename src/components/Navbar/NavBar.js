@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./NavBar.module.css";
 import Image from "next/image";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
 
@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <div className={isScrool ? styles.navBarScrool : styles.navbarContainer}>
       <div className={isScrool ? styles.scrollogo : styles.logo}>
-        <Image src={logo.src} alt="logo" width={100} height={100} />
+        <Image src={logo.src} alt="logo" width={200} height={100} />
       </div>
       <ul
         className={isScrool ? styles.menuContainerScrool : styles.menuContainer}
