@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <div className={isScrool ? styles.navBarScrool : styles.navbarContainer}>
       <div className={isScrool ? styles.scrollogo : styles.logo}>
-        <Image src={logo.src} alt="logo" width={200} height={100} />
+        <Image src={logo.src} alt="logo" width={200} height={40} />
       </div>
       <ul
         className={isScrool ? styles.menuContainerScrool : styles.menuContainer}

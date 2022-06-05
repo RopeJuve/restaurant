@@ -1,13 +1,13 @@
-.container{
-    display:flex;
+.container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(66, 55, 55);
+    background-color: rgb(66, 55, 55);
 }
 
-.body{
-    display:flex;
-    flex-direction:column;
+.body {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
@@ -15,13 +15,15 @@
     color: white;
 }
 
-.logo{
+.logo {
+    width: 200px;
+    height: 100px;
     background-color: transparent;
 }
 
-.text{
-    width:60%;
-    text-align:center;
+.text {
+    width: 60%;
+    text-align: center;
     font-family: "Nunito Sans", sans-serif;
     font-size: 0.8rem;
     font-weight: 200;
@@ -30,12 +32,12 @@
     margin-bottom: 1rem;
 }
 
-.social{
-    display:flex;
+.social {
+    display: flex;
     justify-content: center;
 }
 
-.icon{
+.icon {
     font-size: 1.5rem;
     cursor: pointer;
     color: rgb(197, 157, 95);
