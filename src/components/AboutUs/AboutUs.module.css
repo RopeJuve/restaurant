@@ -25,3 +25,24 @@
   background-color: rgb(197, 157, 95);
   margin-bottom: 25px;
 }
+
+@media (max-width: 70rem) {
+  .p {
+    width: 70%;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media (max-width: 24.5rem) {
+  .p {
+    width: 90%;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media (max-width: 17rem) {
+  .p {
+    width: 95%;
+    transition: all 0.4s ease-in-out;
+  }
+}

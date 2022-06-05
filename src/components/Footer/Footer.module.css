@@ -43,3 +43,11 @@
     color: rgb(197, 157, 95);
     padding-left: 1rem;
 }
+
+@media (max-width: 17.5rem) {
+    .text {
+        width: 90%;
+        transition: all 0.4s ease-in-out;
+
+    }
+}

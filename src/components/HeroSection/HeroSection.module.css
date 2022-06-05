@@ -61,3 +61,64 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 41.9rem) {
+  .container {
+    height: 70vh;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 2.8rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .button {
+    padding: 0.1rem;
+  }
+}
+
+@media (max-width: 24.5rem) {
+  .container {
+    height: 60vh;
+    line-height: 1.5rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .button {
+    line-height: 1rem;
+  }
+
+
+  .button:hover {
+    background-color: rgb(197, 157, 95);
+    color: white;
+    border: 3px solid white;
+  }
+
+}
+
+@media (max-width: 17.5rem) {
+  .container {
+    height: 50vh;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h3 {
+    margin-top: 2rem;
+  }
+}

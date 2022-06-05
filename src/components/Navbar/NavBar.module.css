@@ -86,3 +86,43 @@
   justify-content: center;
   align-items: center;
 }
+
+.hamMenu {
+  display: none;
+}
+
+@media (max-width: 70rem) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .scrollogo {
+    margin-left: 0;
+  }
+
+  .menuContainer {
+    display: none;
+  }
+
+  .menuContainerScrool {
+    display: none;
+  }
+
+  .hamMenu {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 41.9rem) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 24.5rem) {
+  .container {
+    width: 100vw;
+  }
+}

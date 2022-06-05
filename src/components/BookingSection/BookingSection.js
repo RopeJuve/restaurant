@@ -27,7 +27,7 @@ function BookingSection() {
         <div className={styles.inputContainer}>
           <label>Adults:</label>
           <div className={styles.containerInput}>
-            <select class={styles.inputSelect}>
+            <select className={styles.inputSelect}>
               <option value="1">1</option>
               <option value="2">2</option>
             </select>
@@ -36,13 +36,14 @@ function BookingSection() {
         <div className={styles.inputContainer}>
           <label>Children:</label>
           <div className={styles.containerInput}>
-            <select class={styles.inputSelect}>
+            <select className={styles.inputSelect}>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
           </div>
         </div>
+
         <button type="submit" className={styles.button}>
           BOOK NOW
         </button>

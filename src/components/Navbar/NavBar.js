@@ -4,6 +4,12 @@ import Image from "next/image";
 import logo from "../../assets/images/logo1.png";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+library.add(faBars);
 
 function NavBar() {
   const { t } = useTranslation();
@@ -38,6 +44,7 @@ function NavBar() {
         <li>{`${t("navbar.reservation")}`}</li>
         <li>{`${t("navbar.contact")}`}</li>
       </ul>
+      <FontAwesomeIcon icon={faBars} className={styles.hamMenu} />
     </div>
   );
 }
