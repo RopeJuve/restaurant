@@ -1,0 +1,124 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.container h3 {
+  color: rgb(197, 157, 95);
+  font-family: Merriweather;
+  font-style: italic;
+  margin-top: 8rem;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.container h1 {
+  color: white;
+  font-family: Roboto;
+  font-size: 4rem;
+  font-style: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 4.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  white-space: pre-line;
+}
+
+.button {
+  background-color: transparent;
+  color: rgb(197, 157, 95);
+  font-family: Roboto;
+  font-style: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: 3px solid rgb(197, 157, 95);
+  padding: 0.2rem;
+  width: 200px;
+  cursor: pointer;
+  transition: hover 1s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(197, 157, 95);
+  color: white;
+  border: 3px solid white;
+}
+
+.line {
+  margin-top: 0;
+  width: 15%;
+  height: 1px;
+  background-color: rgb(197, 157, 95);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 41.9rem) {
+  .container {
+    height: 70vh;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 2.8rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .button {
+    padding: 0.1rem;
+  }
+}
+
+@media (max-width: 24.5rem) {
+  .container {
+    height: 60vh;
+    line-height: 1.5rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .button {
+    line-height: 1rem;
+  }
+
+
+  .button:hover {
+    background-color: rgb(197, 157, 95);
+    color: white;
+    border: 3px solid white;
+  }
+
+}
+
+@media (max-width: 17.5rem) {
+  .container {
+    height: 50vh;
+    margin-bottom: 1rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .container h3 {
+    margin-top: 2rem;
+  }
+}

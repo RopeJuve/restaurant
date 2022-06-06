@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "aboutUs": "ABOUT US",
+    "rooms": "ROOMS",
+    "reservation": "RESERVATION",
+    "contact": "CONTACT"
+  },
+  "herosection": {
+    "titel1": "Welcome to hotel",
+    "titel2": "WE ARE ALWAYS THE\nRIGHT CHOICE",
+    "book": "BOOK NOW"
+  },
+  "aboutus": {
+    "titel": "OUR STORY"
+  }
+}
