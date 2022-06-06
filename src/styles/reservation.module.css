@@ -1,0 +1,111 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    gap: 0.1rem;
+    background-color: rgba(197, 157, 95, 0.2);
+    z-index: 100;
+    margin-bottom: 1rem;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+}
+
+.inputContainer label {
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    letter-spacing: 1.5px;
+}
+
+.button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 30%;
+    padding: 0.9rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(197, 157, 95);
+    border: 1px solid rgb(197, 157, 95);
+}
+
+.containerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0.2rem;
+    background-color: transparent;
+}
+
+
+.input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    letter-spacing: 1.5px;
+}
+
+.inputSelect {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.6rem;
+}
+
+.input::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: white;
+    padding: 0 0.3em;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.3rem;
+    pointer-events: none;
+    color: white;
+    margin-left: -1.2rem;
+}
