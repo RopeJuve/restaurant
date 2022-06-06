@@ -48,18 +48,27 @@ function NavBar() {
         <li>{`${t("navbar.reservation")}`}</li>
         <li>{`${t("navbar.contact")}`}</li>
       </ul>
-      <FontAwesomeIcon icon={faBars} className={styles.hamMenu} onClick={hamMenuList} />
+      <FontAwesomeIcon
+        icon={faBars}
+        className={styles.hamMenu}
+        onClick={hamMenuList}
+      />
       <div className={toggleHamMenu ? styles.hamMenuList : styles.inactive}>
         <div className={styles.closeContainer}>
-          <button className={styles.closeButton} onClick={() => settoggleHamMenu(!toggleHamMenu)}>X</button>
+          <button
+            className={styles.closeButton}
+            onClick={() => settoggleHamMenu(!toggleHamMenu)}
+          >
+            X
+          </button>
         </div>
         <ul className={styles.list}>
-        <li  onClick={() => settoggleHamMenu(!toggleHamMenu)}>
-          <Link href="/" >{`${t("navbar.home")}`}</Link>
-        </li>
-        <li onClick={() => settoggleHamMenu(!toggleHamMenu)}>
-          <Link href="/#aboutus">{`${t("navbar.aboutUs")}`}</Link>
-        </li>
+          <li onClick={() => settoggleHamMenu(!toggleHamMenu)}>
+            <Link href="/">{`${t("navbar.home")}`}</Link>
+          </li>
+          <li onClick={() => settoggleHamMenu(!toggleHamMenu)}>
+            <Link href="/#aboutus">{`${t("navbar.aboutUs")}`}</Link>
+          </li>
           <li>ROOMS</li>
           <li>RESERVATION</li>
           <li>CONTACT</li>

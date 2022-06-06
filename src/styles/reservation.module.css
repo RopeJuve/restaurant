@@ -22,9 +22,8 @@
     border: 1px solid white;
     gap: 0.1rem;
     background-color: rgba(197, 157, 95, 0.2);
-    z-index: 100;
     margin-bottom: 1rem;
-    box-shadow: rgb(197, 157, 95) 0px 13px 27px -5px,rgb(197, 157, 95) 0px 8px 16px -8px;
+    box-shadow: rgb(197, 157, 95) 0px 13px 27px -5px, rgb(197, 157, 95) 0px 8px 16px -8px;
 }
 
 .inputContainer {
@@ -109,4 +108,20 @@
     pointer-events: none;
     color: white;
     margin-left: -1.2rem;
+}
+
+@media (max-width: 70rem) {
+    .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 40rem) {
+    .form {
+        width: 90%;
+    }
+
+    .inputContainer {
+        width: 80%;
+    }
 }

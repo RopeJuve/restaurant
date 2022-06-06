@@ -7,6 +7,7 @@ import {
   faCalendarCheck,
   faCalendarXmark,
 } from "@fortawesome/free-regular-svg-icons";
+
 library.add(faCalendarCheck, faCalendarXmark);
 
 const Reservation = () => {
@@ -33,14 +34,22 @@ const Reservation = () => {
           <div className={styles.inputContainer}>
             <label>Check In:</label>
             <div className={styles.containerInput}>
-              <input className={styles.input} type="date" defaultValue={checkIn} />
+              <input
+                className={styles.input}
+                type="date"
+                defaultValue={checkIn}
+              />
               <FontAwesomeIcon icon={faCalendarCheck} className={styles.icon} />
             </div>
           </div>
           <div className={styles.inputContainer}>
             <label>Check Out:</label>
             <div className={styles.containerInput}>
-              <input className={styles.input} type="date" defaultValue={checkOut} />
+              <input
+                className={styles.input}
+                type="date"
+                defaultValue={checkOut}
+              />
               <FontAwesomeIcon icon={faCalendarXmark} className={styles.icon} />
             </div>
           </div>

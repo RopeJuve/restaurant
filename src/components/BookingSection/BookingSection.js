@@ -7,6 +7,8 @@ import {
   faCalendarCheck,
   faCalendarXmark,
 } from "@fortawesome/free-regular-svg-icons";
+
+
 library.add(faCalendarCheck, faCalendarXmark);
 
 const BookingSection = () => {
@@ -16,6 +18,7 @@ const BookingSection = () => {
     adults: "1",
     numChildren: "0",
   });
+
   const submitHandler = (e) => {
     e.preventDefault();
     Router.push({
@@ -23,6 +26,8 @@ const BookingSection = () => {
       query: resData,
     });
   };
+
+  
   return (
     <div className={styles.container}>
       <form className={styles.form}>
@@ -57,10 +62,9 @@ const BookingSection = () => {
           <div className={styles.containerInput}>
             <select
               className={styles.inputSelect}
-              onChange={(e) => {
-                setResData({ ...resData, adults: e.target.value});
-                console.log(resData);
-              }}
+              onChange={(e) =>
+                setResData({ ...resData, adults: e.target.value })
+              }
               defaultValue={resData.adults}
             >
               <option value="0">0</option>
@@ -74,10 +78,9 @@ const BookingSection = () => {
           <div className={styles.containerInput}>
             <select
               className={styles.inputSelect}
-              onChange={(e) => {
-                setResData({ ...resData, numChildren: e.target.value });
-                console.log(resData);
-              }}
+              onChange={(e) =>
+                setResData({ ...resData, numChildren: e.target.value })
+              }
               defaultValue={resData.numChildren}
             >
               <option value="0">0</option>
