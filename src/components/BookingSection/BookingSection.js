@@ -14,11 +14,10 @@ const BookingSection = () => {
     checkIn: "",
     checkOut: "",
     adults: "1",
-    children: "0",
+    numChildren: "0",
   });
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(e.target.value);
     Router.push({
       pathname: "/reservation",
       query: resData,
@@ -58,10 +57,13 @@ const BookingSection = () => {
           <div className={styles.containerInput}>
             <select
               className={styles.inputSelect}
-              onSelect={(e) =>
-                setResData({ ...resData, adults: e.target.value })
-              }
+              onChange={(e) => {
+                setResData({ ...resData, adults: e.target.value});
+                console.log(resData);
+              }}
+              defaultValue={resData.adults}
             >
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
             </select>
@@ -72,9 +74,11 @@ const BookingSection = () => {
           <div className={styles.containerInput}>
             <select
               className={styles.inputSelect}
-              onSelect={(e) =>
-                setResData({ ...resData, children: e.target.value })
-              }
+              onChange={(e) => {
+                setResData({ ...resData, numChildren: e.target.value });
+                console.log(resData);
+              }}
+              defaultValue={resData.numChildren}
             >
               <option value="0">0</option>
               <option value="1">1</option>
@@ -84,11 +88,7 @@ const BookingSection = () => {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className={styles.button}
-          onClick={(e) => submitHandler(e)}
-        >
+        <button type="submit" className={styles.button} onClick={submitHandler}>
           BOOK NOW
         </button>
       </form>

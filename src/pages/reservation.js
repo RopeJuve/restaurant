@@ -11,8 +11,8 @@ library.add(faCalendarCheck, faCalendarXmark);
 
 const Reservation = () => {
   const router = useRouter();
-  const { checkIn, checkOut, adults, children } = router.query;
-  console.log(checkIn, checkOut, adults, children);
+  const { checkIn, checkOut, adults, numChildren } = router.query;
+  console.log(checkIn, checkOut, adults, numChildren);
   return (
     <Layout>
       <div className={styles.container}>
@@ -33,21 +33,21 @@ const Reservation = () => {
           <div className={styles.inputContainer}>
             <label>Check In:</label>
             <div className={styles.containerInput}>
-              <input className={styles.input} type="date" value={checkIn} />
+              <input className={styles.input} type="date" defaultValue={checkIn} />
               <FontAwesomeIcon icon={faCalendarCheck} className={styles.icon} />
             </div>
           </div>
           <div className={styles.inputContainer}>
             <label>Check Out:</label>
             <div className={styles.containerInput}>
-              <input className={styles.input} type="date" value={checkOut} />
+              <input className={styles.input} type="date" defaultValue={checkOut} />
               <FontAwesomeIcon icon={faCalendarXmark} className={styles.icon} />
             </div>
           </div>
           <div className={styles.inputContainer}>
             <label>Adults:</label>
             <div className={styles.containerInput}>
-              <select className={styles.inputSelect}>
+              <select className={styles.inputSelect} defaultValue={adults}>
                 <option value="1">1</option>
                 <option value="2">2</option>
               </select>
@@ -56,7 +56,7 @@ const Reservation = () => {
           <div className={styles.inputContainer}>
             <label>Children:</label>
             <div className={styles.containerInput}>
-              <select className={styles.inputSelect} value={children}>
+              <select className={styles.inputSelect} defaultValue={numChildren}>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>

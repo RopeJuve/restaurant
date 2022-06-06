@@ -12,6 +12,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.1rem;
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .inputContainer {
@@ -27,7 +29,7 @@
   text-align: left;
   font-size: 0.9rem;
   line-height: 1.6rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1rem;
 }
 
 .button {
@@ -62,27 +64,33 @@
 .input {
   outline: none;
   border: none;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background: rgb(197, 157, 95);
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 0.9rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   width: 100%;
   line-height: 1.6rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1rem;
 }
 
 .inputSelect {
+  width: 100%;
   outline: none;
   border: none;
-  background-color: transparent;
+  background: rgb(197, 157, 95);
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 0.9rem;
   line-height: 1.6rem;
-  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   letter-spacing: 1.5px;
   text-align: left;
 }
+
 
 .input::-webkit-calendar-picker-indicator {
   background: transparent;
@@ -124,7 +132,7 @@
 
 @media (max-width: 27rem) {
   .container {
-    height: 25rem;
+    height: 30rem;
   }
 
   .form {
@@ -135,7 +143,7 @@
 
 @media (max-width: 17.5rem) {
   .container {
-    height: 25rem;
+    height: 30rem;
   }
 
   .form {

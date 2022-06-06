@@ -27,6 +27,7 @@ const Home = () => {
 };
 
 export async function getServerSideProps({ locale }) {
+  console.log(locale);
   return {
     props: {
       ...(await serverSideTranslations(
