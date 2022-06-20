@@ -6,6 +6,7 @@ import {
   faCalendarCheck,
   faCalendarXmark,
 } from "@fortawesome/free-regular-svg-icons";
+import Room from "../components/Room/Room";
 
 library.add(faCalendarCheck, faCalendarXmark);
 
@@ -16,7 +17,9 @@ const Reservation = () => {
   return (
     <div className={styles.background}>
       <h1>RESERVATION</h1>
+      <Room />
       <form className={styles.form}>
+      
         <div className={styles.inputContainer}>
           <label>First Name:</label>
           <div className={styles.containerInput}>
